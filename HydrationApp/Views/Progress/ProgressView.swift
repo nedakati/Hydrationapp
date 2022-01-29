@@ -16,7 +16,7 @@ struct ProgressView: View {
             Text("\(viewModel.intakePercentage)%")
                 .font(.system(size: 36))
                 .foregroundColor(Color(.lightGreen))
-            Text("of \(viewModel.targetDailyIntake) ml Goal")
+            Text("of \(viewModel.targetDailyIntake) \(viewModel.selectedUnit.shortTitle) Goal")
                 .font(.system(size: 14))
             
             ZStack {
@@ -35,20 +35,20 @@ struct ProgressView: View {
 
             
             HStack(alignment: .center, spacing: 8) {
-                Button("200 ml") {
-                    viewModel.addedDailyIntake(200)
+                Button("\(viewModel.container1Size) \(viewModel.selectedUnit.shortTitle)") {
+                    viewModel.addedDailyIntake(viewModel.container1Size)
                 }
                 .buttonStyle(AccentButtonStyle())
                 .frame(height: 30)
                 
-                Button("400 ml") {
-                    viewModel.addedDailyIntake(400)
+                Button("\(viewModel.container2Size) \(viewModel.selectedUnit.shortTitle)") {
+                    viewModel.addedDailyIntake(viewModel.container2Size)
                 }
                 .buttonStyle(AccentButtonStyle())
                 .frame(height: 30)
 
-                Button("500 ml") {
-                    viewModel.addedDailyIntake(500)
+                Button("\(viewModel.container3Size) \(viewModel.selectedUnit.shortTitle)") {
+                    viewModel.addedDailyIntake(viewModel.container3Size)
                 }
                 .buttonStyle(AccentButtonStyle())
                 .frame(height: 30)

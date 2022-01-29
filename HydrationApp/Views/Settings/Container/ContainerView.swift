@@ -1,5 +1,5 @@
 //
-//  DailyGoalView.swift
+//  ContainerView.swift
 //  HydrationApp
 //
 //  Created by Katalin Neda on 29.01.2022.
@@ -7,18 +7,15 @@
 
 import SwiftUI
 
-struct MyTextFieldStyle: TextFieldStyle {
-    func _body(configuration: TextField<Self._Label>) -> some View {
-        configuration
-        .padding(30)
+struct ContainerView: View {
+    
+    @ObservedObject var viewModel: ContainerViewModel
+    
+    init(container: Container) {
+        viewModel = ContainerViewModel(container: container)
     }
-}
-
-struct DailyGoalView: View {
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-    
-    @ObservedObject var viewModel = DailyGoalViewModel()
 
     var body: some View {
         ZStack {
@@ -26,14 +23,14 @@ struct DailyGoalView: View {
             Image(Images.backgroundImage.rawValue, bundle: Bundle.main)
                 .resizable()
             VStack {
-                Text("Here you can set your hydration goal based on your preferred unit of measurement")
+                Text("Here you can specify your container size so it would be easier to enter your daily daily liquid intake.")
                     .font(.callout)
                     .multilineTextAlignment(.center)
                     .padding()
                 Spacer()
                 TextField(
                     "",
-                    text: $viewModel.targetDailyIntake
+                    text: $viewModel.containerSize
                 )
                 .textFieldStyle(MyTextFieldStyle())
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(.lightGreen), lineWidth: 4))
@@ -56,13 +53,13 @@ struct DailyGoalView: View {
             Text("Save")
                 .foregroundColor(Color(.lightGreen))
         }))
-        .navigationBarTitle("Daily Goal")
+        .navigationBarTitle(viewModel.container.title)
         .navigationBarBackButtonHidden(true)
     }
 }
 
-struct DailyGoalView_Previews: PreviewProvider {
+struct ContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyGoalView()
+        ContainerView(container: .container1)
     }
 }

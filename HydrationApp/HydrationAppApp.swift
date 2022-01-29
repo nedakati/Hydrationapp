@@ -13,7 +13,7 @@ struct HydrationAppApp: App {
     
     init() {
         UITabBar.appearance().backgroundColor = .backgroundColor
-        UITabBar.appearance().unselectedItemTintColor = .white        
+        UITabBar.appearance().unselectedItemTintColor = .white
     }
     
     var body: some Scene {

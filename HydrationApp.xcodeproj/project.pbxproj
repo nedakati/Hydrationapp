@@ -33,6 +33,9 @@
 		A9C5702227A551DD00C1DBFC /* DailyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */; };
 		A9C5702427A551F200C1DBFC /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702327A551F200C1DBFC /* DailyGoalView.swift */; };
 		A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */; };
+		A9C5702927A58A8000C1DBFC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702827A58A8000C1DBFC /* ContainerView.swift */; };
+		A9C5702B27A58A8B00C1DBFC /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702A27A58A8B00C1DBFC /* ContainerViewModel.swift */; };
+		A9C5702D27A58AA800C1DBFC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702C27A58AA800C1DBFC /* Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewModel.swift; sourceTree = "<group>"; };
 		A9C5702327A551F200C1DBFC /* DailyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalView.swift; sourceTree = "<group>"; };
 		A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSettingsCell.swift; sourceTree = "<group>"; };
+		A9C5702827A58A8000C1DBFC /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		A9C5702A27A58A8B00C1DBFC /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
+		A9C5702C27A58AA800C1DBFC /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,7 @@
 		A9C5700C27A5375A00C1DBFC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5702727A58A7700C1DBFC /* Container */,
 				A9C5702027A551B900C1DBFC /* Daily Goal */,
 				A9C5701127A544DD00C1DBFC /* Units */,
 				A9C5700D27A5376300C1DBFC /* SettingsView.swift */,
@@ -216,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C5701A27A5496D00C1DBFC /* Unit.swift */,
+				A9C5702C27A58AA800C1DBFC /* Container.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +243,15 @@
 				A9C5702327A551F200C1DBFC /* DailyGoalView.swift */,
 			);
 			path = "Daily Goal";
+			sourceTree = "<group>";
+		};
+		A9C5702727A58A7700C1DBFC /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5702827A58A8000C1DBFC /* ContainerView.swift */,
+				A9C5702A27A58A8B00C1DBFC /* ContainerViewModel.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,10 +340,13 @@
 				A9C5700327A52DD400C1DBFC /* UserStorageService.swift in Sources */,
 				A9C5701327A5465200C1DBFC /* UnitsView.swift in Sources */,
 				A9C56FD927A0630800C1DBFC /* Colors.swift in Sources */,
+				A9C5702D27A58AA800C1DBFC /* Container.swift in Sources */,
 				A9C56FE327A06BD600C1DBFC /* ProgressView.swift in Sources */,
 				A9C5701D27A54F9100C1DBFC /* SettingsViewModel.swift in Sources */,
 				A9C56FE627A06F6000C1DBFC /* AccentButtonStyle.swift in Sources */,
 				A9C5702227A551DD00C1DBFC /* DailyGoalViewModel.swift in Sources */,
+				A9C5702B27A58A8B00C1DBFC /* ContainerViewModel.swift in Sources */,
+				A9C5702927A58A8000C1DBFC /* ContainerView.swift in Sources */,
 				A9C56FDE27A0683F00C1DBFC /* TodayView.swift in Sources */,
 				A9C5701F27A5510100C1DBFC /* AppDelegate.swift in Sources */,
 				A9C56FCA27A0601D00C1DBFC /* HydrationAppApp.swift in Sources */,

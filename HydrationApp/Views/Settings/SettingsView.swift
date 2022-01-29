@@ -32,19 +32,19 @@ struct SettingsView: View {
                         .font(.callout)
             ) {
                 NavigationLink {
-                    
+                    ContainerView(container: .container1)
                 } label: {
-                    SettingsCell(title: "Container 1", secondaryTitle: "")
+                    SettingsCell(title: Container.container1.title, secondaryTitle: viewModel.container1)
                 }
                 NavigationLink {
-                    
+                    ContainerView(container: .container2)
                 } label: {
-                    SettingsCell(title: "Container 2", secondaryTitle: "")
+                    SettingsCell(title: Container.container2.title, secondaryTitle: viewModel.container2)
                 }
                 NavigationLink {
-                    
+                    ContainerView(container: .container3)
                 } label: {
-                    SettingsCell(title: "Container 3", secondaryTitle: "")
+                    SettingsCell(title: Container.container3.title, secondaryTitle: viewModel.container3)
                 }
             }
             Text("These containers will appear on your main screen so you can easily tap on them and track your intake.")
