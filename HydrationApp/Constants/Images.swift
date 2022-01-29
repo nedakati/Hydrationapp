@@ -10,4 +10,6 @@ import Foundation
 enum Images: String {
     case today = "today"
     case history = "history"
+    case backgroundImage = "backgroundImage"
+    case emptyGlass = "Glass_empty"
 }
