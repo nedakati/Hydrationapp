@@ -12,4 +12,6 @@ enum Images: String {
     case history = "history"
     case backgroundImage = "backgroundImage"
     case emptyGlass = "Glass_empty"
+    case settings = "Settings"
+    case checkmark = "checkmark_goal"
 }

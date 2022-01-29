@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct TodayView: View {
+    
+    @State var isActive = false
+    
     var body: some View {
         NavigationView {
             ZStack {
-                Image("backgroundImage", bundle: Bundle.main)
+                Image(Images.backgroundImage.rawValue, bundle: Bundle.main)
                     .resizable()
                 ProgressView()
             }
-            .navigationBarTitle("Today's Progress", displayMode: .inline)
+            .navigationBarTitle(isActive ? "" : "Today's Progress", displayMode: .inline)
+            .navigationBarItems(trailing:
+                NavigationLink(isActive: $isActive, destination: {
+                   SettingsView()
+                }, label: {
+                    Image(Images.settings.rawValue, bundle: Bundle.main)
+                        .resizable()
+                })
+            )
         }
     }
 }

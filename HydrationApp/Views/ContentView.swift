@@ -26,6 +26,7 @@ struct ContentView: View {
             }
             .tag(2)
         }
+        .preferredColorScheme(.dark)
         .accentColor(Color(.lightGreen))
     }
 }

@@ -17,6 +17,22 @@
 		A9C56FE027A068A100C1DBFC /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FDF27A068A100C1DBFC /* HistoryView.swift */; };
 		A9C56FE327A06BD600C1DBFC /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FE227A06BD600C1DBFC /* ProgressView.swift */; };
 		A9C56FE627A06F6000C1DBFC /* AccentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FE527A06F6000C1DBFC /* AccentButtonStyle.swift */; };
+		A9C56FFF27A52C7B00C1DBFC /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FFE27A52C7B00C1DBFC /* ProgressViewModel.swift */; };
+		A9C5700327A52DD400C1DBFC /* UserStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700227A52DD400C1DBFC /* UserStorageService.swift */; };
+		A9C5700527A5318900C1DBFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700427A5318900C1DBFC /* Constants.swift */; };
+		A9C5700827A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700727A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift */; };
+		A9C5700B27A5355700C1DBFC /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700A27A5355700C1DBFC /* Date+Utility.swift */; };
+		A9C5700E27A5376300C1DBFC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700D27A5376300C1DBFC /* SettingsView.swift */; };
+		A9C5701027A53CF700C1DBFC /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700F27A53CF700C1DBFC /* SettingsCell.swift */; };
+		A9C5701327A5465200C1DBFC /* UnitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701227A5465200C1DBFC /* UnitsView.swift */; };
+		A9C5701527A546C500C1DBFC /* UnitsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701427A546C500C1DBFC /* UnitsCellView.swift */; };
+		A9C5701727A5494100C1DBFC /* UnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701627A5494100C1DBFC /* UnitsViewModel.swift */; };
+		A9C5701B27A5496D00C1DBFC /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701A27A5496D00C1DBFC /* Unit.swift */; };
+		A9C5701D27A54F9100C1DBFC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701C27A54F9100C1DBFC /* SettingsViewModel.swift */; };
+		A9C5701F27A5510100C1DBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701E27A5510100C1DBFC /* AppDelegate.swift */; };
+		A9C5702227A551DD00C1DBFC /* DailyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */; };
+		A9C5702427A551F200C1DBFC /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702327A551F200C1DBFC /* DailyGoalView.swift */; };
+		A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +47,22 @@
 		A9C56FDF27A068A100C1DBFC /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		A9C56FE227A06BD600C1DBFC /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		A9C56FE527A06F6000C1DBFC /* AccentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButtonStyle.swift; sourceTree = "<group>"; };
+		A9C56FFE27A52C7B00C1DBFC /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+		A9C5700227A52DD400C1DBFC /* UserStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorageService.swift; sourceTree = "<group>"; };
+		A9C5700427A5318900C1DBFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A9C5700727A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
+		A9C5700A27A5355700C1DBFC /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
+		A9C5700D27A5376300C1DBFC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9C5700F27A53CF700C1DBFC /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		A9C5701227A5465200C1DBFC /* UnitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsView.swift; sourceTree = "<group>"; };
+		A9C5701427A546C500C1DBFC /* UnitsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsCellView.swift; sourceTree = "<group>"; };
+		A9C5701627A5494100C1DBFC /* UnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsViewModel.swift; sourceTree = "<group>"; };
+		A9C5701A27A5496D00C1DBFC /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		A9C5701C27A54F9100C1DBFC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A9C5701E27A5510100C1DBFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewModel.swift; sourceTree = "<group>"; };
+		A9C5702327A551F200C1DBFC /* DailyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalView.swift; sourceTree = "<group>"; };
+		A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +95,14 @@
 		A9C56FC827A0601D00C1DBFC /* HydrationApp */ = {
 			isa = PBXGroup;
 			children = (
-				A9C56FE427A06EED00C1DBFC /* Styles */,
 				A9C56FDC27A0682300C1DBFC /* Views */,
+				A9C5700127A52DB100C1DBFC /* Logic */,
+				A9C56FE427A06EED00C1DBFC /* Styles */,
 				A9C56FD727A0630100C1DBFC /* Constants */,
 				A9C56FC927A0601D00C1DBFC /* HydrationAppApp.swift */,
 				A9C56FCD27A0601E00C1DBFC /* Assets.xcassets */,
 				A9C56FCF27A0601E00C1DBFC /* Preview Content */,
+				A9C5701E27A5510100C1DBFC /* AppDelegate.swift */,
 			);
 			path = HydrationApp;
 			sourceTree = "<group>";
@@ -86,6 +120,7 @@
 			children = (
 				A9C56FD827A0630800C1DBFC /* Colors.swift */,
 				A9C56FDA27A0640700C1DBFC /* Images.swift */,
+				A9C5700427A5318900C1DBFC /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -93,6 +128,8 @@
 		A9C56FDC27A0682300C1DBFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5700C27A5375A00C1DBFC /* Settings */,
+				A9C5700027A52C8100C1DBFC /* Progress */,
 				A9C56FE127A06BC700C1DBFC /* Today */,
 				A9C56FCB27A0601D00C1DBFC /* ContentView.swift */,
 				A9C56FDF27A068A100C1DBFC /* HistoryView.swift */,
@@ -104,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				A9C56FDD27A0683F00C1DBFC /* TodayView.swift */,
-				A9C56FE227A06BD600C1DBFC /* ProgressView.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -115,6 +151,90 @@
 				A9C56FE527A06F6000C1DBFC /* AccentButtonStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		A9C5700027A52C8100C1DBFC /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				A9C56FE227A06BD600C1DBFC /* ProgressView.swift */,
+				A9C56FFE27A52C7B00C1DBFC /* ProgressViewModel.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		A9C5700127A52DB100C1DBFC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5701927A5495E00C1DBFC /* Persistance */,
+				A9C5701827A5495700C1DBFC /* Models */,
+				A9C5700927A5354D00C1DBFC /* Extensions */,
+				A9C5700627A5326B00C1DBFC /* Utility */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		A9C5700627A5326B00C1DBFC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5700727A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A9C5700927A5354D00C1DBFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5700A27A5355700C1DBFC /* Date+Utility.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9C5700C27A5375A00C1DBFC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5702027A551B900C1DBFC /* Daily Goal */,
+				A9C5701127A544DD00C1DBFC /* Units */,
+				A9C5700D27A5376300C1DBFC /* SettingsView.swift */,
+				A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */,
+				A9C5700F27A53CF700C1DBFC /* SettingsCell.swift */,
+				A9C5701C27A54F9100C1DBFC /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A9C5701127A544DD00C1DBFC /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5701427A546C500C1DBFC /* UnitsCellView.swift */,
+				A9C5701227A5465200C1DBFC /* UnitsView.swift */,
+				A9C5701627A5494100C1DBFC /* UnitsViewModel.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		A9C5701827A5495700C1DBFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5701A27A5496D00C1DBFC /* Unit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9C5701927A5495E00C1DBFC /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5700227A52DD400C1DBFC /* UserStorageService.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		A9C5702027A551B900C1DBFC /* Daily Goal */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */,
+				A9C5702327A551F200C1DBFC /* DailyGoalView.swift */,
+			);
+			path = "Daily Goal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,14 +307,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */,
 				A9C56FCC27A0601D00C1DBFC /* ContentView.swift in Sources */,
+				A9C5700527A5318900C1DBFC /* Constants.swift in Sources */,
 				A9C56FE027A068A100C1DBFC /* HistoryView.swift in Sources */,
 				A9C56FDB27A0640700C1DBFC /* Images.swift in Sources */,
+				A9C5701727A5494100C1DBFC /* UnitsViewModel.swift in Sources */,
+				A9C5700E27A5376300C1DBFC /* SettingsView.swift in Sources */,
+				A9C5701B27A5496D00C1DBFC /* Unit.swift in Sources */,
+				A9C5701527A546C500C1DBFC /* UnitsCellView.swift in Sources */,
+				A9C5700B27A5355700C1DBFC /* Date+Utility.swift in Sources */,
+				A9C56FFF27A52C7B00C1DBFC /* ProgressViewModel.swift in Sources */,
+				A9C5702427A551F200C1DBFC /* DailyGoalView.swift in Sources */,
+				A9C5700827A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift in Sources */,
+				A9C5700327A52DD400C1DBFC /* UserStorageService.swift in Sources */,
+				A9C5701327A5465200C1DBFC /* UnitsView.swift in Sources */,
 				A9C56FD927A0630800C1DBFC /* Colors.swift in Sources */,
 				A9C56FE327A06BD600C1DBFC /* ProgressView.swift in Sources */,
+				A9C5701D27A54F9100C1DBFC /* SettingsViewModel.swift in Sources */,
 				A9C56FE627A06F6000C1DBFC /* AccentButtonStyle.swift in Sources */,
+				A9C5702227A551DD00C1DBFC /* DailyGoalViewModel.swift in Sources */,
 				A9C56FDE27A0683F00C1DBFC /* TodayView.swift in Sources */,
+				A9C5701F27A5510100C1DBFC /* AppDelegate.swift in Sources */,
 				A9C56FCA27A0601D00C1DBFC /* HydrationAppApp.swift in Sources */,
+				A9C5701027A53CF700C1DBFC /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

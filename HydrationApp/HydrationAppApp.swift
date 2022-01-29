@@ -9,15 +9,11 @@ import SwiftUI
 
 @available(iOS 14.0, *)
 @main
-
 struct HydrationAppApp: App {
     
     init() {
         UITabBar.appearance().backgroundColor = .backgroundColor
-        UITabBar.appearance().unselectedItemTintColor = .white
-        
-        UINavigationBar.appearance().backgroundColor = .backgroundColor
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.lightGreen]
+        UITabBar.appearance().unselectedItemTintColor = .white        
     }
     
     var body: some Scene {
