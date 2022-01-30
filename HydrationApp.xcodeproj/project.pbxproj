@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9C56FCA27A0601D00C1DBFC /* HydrationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FC927A0601D00C1DBFC /* HydrationAppApp.swift */; };
 		A9C56FCC27A0601D00C1DBFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FCB27A0601D00C1DBFC /* ContentView.swift */; };
 		A9C56FCE27A0601E00C1DBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C56FCD27A0601E00C1DBFC /* Assets.xcassets */; };
 		A9C56FD127A0601E00C1DBFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C56FD027A0601E00C1DBFC /* Preview Assets.xcassets */; };
@@ -19,7 +18,6 @@
 		A9C56FE627A06F6000C1DBFC /* AccentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FE527A06F6000C1DBFC /* AccentButtonStyle.swift */; };
 		A9C56FFF27A52C7B00C1DBFC /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C56FFE27A52C7B00C1DBFC /* ProgressViewModel.swift */; };
 		A9C5700327A52DD400C1DBFC /* UserStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700227A52DD400C1DBFC /* UserStorageService.swift */; };
-		A9C5700527A5318900C1DBFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700427A5318900C1DBFC /* Constants.swift */; };
 		A9C5700827A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700727A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift */; };
 		A9C5700B27A5355700C1DBFC /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700A27A5355700C1DBFC /* Date+Utility.swift */; };
 		A9C5700E27A5376300C1DBFC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5700D27A5376300C1DBFC /* SettingsView.swift */; };
@@ -29,7 +27,6 @@
 		A9C5701727A5494100C1DBFC /* UnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701627A5494100C1DBFC /* UnitsViewModel.swift */; };
 		A9C5701B27A5496D00C1DBFC /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701A27A5496D00C1DBFC /* Unit.swift */; };
 		A9C5701D27A54F9100C1DBFC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701C27A54F9100C1DBFC /* SettingsViewModel.swift */; };
-		A9C5701F27A5510100C1DBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5701E27A5510100C1DBFC /* AppDelegate.swift */; };
 		A9C5702227A551DD00C1DBFC /* DailyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */; };
 		A9C5702427A551F200C1DBFC /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702327A551F200C1DBFC /* DailyGoalView.swift */; };
 		A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */; };
@@ -40,11 +37,13 @@
 		A9C5703427A680B500C1DBFC /* BarChart in Frameworks */ = {isa = PBXBuildFile; productRef = A9C5703327A680B500C1DBFC /* BarChart */; };
 		A9C5703827A682C500C1DBFC /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5703727A682C500C1DBFC /* HistoryViewModel.swift */; };
 		A9C5703A27A6847600C1DBFC /* SelectionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5703927A6847600C1DBFC /* SelectionLine.swift */; };
+		A9C5706A27A6897B00C1DBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5706927A6897B00C1DBFC /* AppDelegate.swift */; };
+		A9C5706C27A6899900C1DBFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */; };
+		A9C5706E27A689CA00C1DBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C5706D27A689CA00C1DBFC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9C56FC627A0601D00C1DBFC /* HydrationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HydrationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C56FC927A0601D00C1DBFC /* HydrationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationAppApp.swift; sourceTree = "<group>"; };
 		A9C56FCB27A0601D00C1DBFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9C56FCD27A0601E00C1DBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C56FD027A0601E00C1DBFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,7 +55,6 @@
 		A9C56FE527A06F6000C1DBFC /* AccentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButtonStyle.swift; sourceTree = "<group>"; };
 		A9C56FFE27A52C7B00C1DBFC /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
 		A9C5700227A52DD400C1DBFC /* UserStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorageService.swift; sourceTree = "<group>"; };
-		A9C5700427A5318900C1DBFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9C5700727A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
 		A9C5700A27A5355700C1DBFC /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
 		A9C5700D27A5376300C1DBFC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 		A9C5701627A5494100C1DBFC /* UnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsViewModel.swift; sourceTree = "<group>"; };
 		A9C5701A27A5496D00C1DBFC /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		A9C5701C27A54F9100C1DBFC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		A9C5701E27A5510100C1DBFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C5702127A551DD00C1DBFC /* DailyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewModel.swift; sourceTree = "<group>"; };
 		A9C5702327A551F200C1DBFC /* DailyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalView.swift; sourceTree = "<group>"; };
 		A9C5702527A553EC00C1DBFC /* ButtonSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSettingsCell.swift; sourceTree = "<group>"; };
@@ -77,6 +74,9 @@
 		A9C5703527A680E000C1DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A9C5703727A682C500C1DBFC /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		A9C5703927A6847600C1DBFC /* SelectionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionLine.swift; sourceTree = "<group>"; };
+		A9C5706927A6897B00C1DBFC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9C5706D27A689CA00C1DBFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,15 +110,15 @@
 		A9C56FC827A0601D00C1DBFC /* HydrationApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5706F27A68A2D00C1DBFC /* Main */,
 				A9C5703527A680E000C1DBFC /* Info.plist */,
 				A9C56FDC27A0682300C1DBFC /* Views */,
 				A9C5700127A52DB100C1DBFC /* Logic */,
 				A9C56FE427A06EED00C1DBFC /* Styles */,
 				A9C56FD727A0630100C1DBFC /* Constants */,
-				A9C56FC927A0601D00C1DBFC /* HydrationAppApp.swift */,
+				A9C5706D27A689CA00C1DBFC /* LaunchScreen.storyboard */,
 				A9C56FCD27A0601E00C1DBFC /* Assets.xcassets */,
 				A9C56FCF27A0601E00C1DBFC /* Preview Content */,
-				A9C5701E27A5510100C1DBFC /* AppDelegate.swift */,
 			);
 			path = HydrationApp;
 			sourceTree = "<group>";
@@ -136,7 +136,6 @@
 			children = (
 				A9C56FD827A0630800C1DBFC /* Colors.swift */,
 				A9C56FDA27A0640700C1DBFC /* Images.swift */,
-				A9C5700427A5318900C1DBFC /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -275,6 +274,15 @@
 			path = History;
 			sourceTree = "<group>";
 		};
+		A9C5706F27A68A2D00C1DBFC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5706927A6897B00C1DBFC /* AppDelegate.swift */,
+				A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C5706E27A689CA00C1DBFC /* LaunchScreen.storyboard in Resources */,
 				A9C56FD127A0601E00C1DBFC /* Preview Assets.xcassets in Resources */,
 				A9C56FCE27A0601E00C1DBFC /* Assets.xcassets in Resources */,
 			);
@@ -353,8 +362,8 @@
 			files = (
 				A9C5703A27A6847600C1DBFC /* SelectionLine.swift in Sources */,
 				A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */,
+				A9C5706C27A6899900C1DBFC /* SceneDelegate.swift in Sources */,
 				A9C56FCC27A0601D00C1DBFC /* ContentView.swift in Sources */,
-				A9C5700527A5318900C1DBFC /* Constants.swift in Sources */,
 				A9C5703127A595AE00C1DBFC /* NotificationName+Values.swift in Sources */,
 				A9C56FE027A068A100C1DBFC /* HistoryView.swift in Sources */,
 				A9C56FDB27A0640700C1DBFC /* Images.swift in Sources */,
@@ -369,6 +378,7 @@
 				A9C5700827A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift in Sources */,
 				A9C5700327A52DD400C1DBFC /* UserStorageService.swift in Sources */,
 				A9C5701327A5465200C1DBFC /* UnitsView.swift in Sources */,
+				A9C5706A27A6897B00C1DBFC /* AppDelegate.swift in Sources */,
 				A9C56FD927A0630800C1DBFC /* Colors.swift in Sources */,
 				A9C5702D27A58AA800C1DBFC /* Container.swift in Sources */,
 				A9C56FE327A06BD600C1DBFC /* ProgressView.swift in Sources */,
@@ -378,8 +388,6 @@
 				A9C5702B27A58A8B00C1DBFC /* ContainerViewModel.swift in Sources */,
 				A9C5702927A58A8000C1DBFC /* ContainerView.swift in Sources */,
 				A9C56FDE27A0683F00C1DBFC /* TodayView.swift in Sources */,
-				A9C5701F27A5510100C1DBFC /* AppDelegate.swift in Sources */,
-				A9C56FCA27A0601D00C1DBFC /* HydrationAppApp.swift in Sources */,
 				A9C5701027A53CF700C1DBFC /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -493,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -515,10 +523,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HydrationApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -547,10 +556,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HydrationApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
