@@ -40,6 +40,14 @@
 		A9C5706A27A6897B00C1DBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5706927A6897B00C1DBFC /* AppDelegate.swift */; };
 		A9C5706C27A6899900C1DBFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */; };
 		A9C5706E27A689CA00C1DBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C5706D27A689CA00C1DBFC /* LaunchScreen.storyboard */; };
+		A9C5709027A68B8600C1DBFC /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5708F27A68B8600C1DBFC /* PersistenceController.swift */; };
+		A9C5709327A68BE300C1DBFC /* DailyIntakeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9C5709127A68BE300C1DBFC /* DailyIntakeModel.xcdatamodeld */; };
+		A9C5709527A68F7800C1DBFC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5709427A68F7800C1DBFC /* CoreDataManager.swift */; };
+		A9C5709727A69D8900C1DBFC /* HistoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5709627A69D8900C1DBFC /* HistoryCellView.swift */; };
+		A9C5709927A69E1200C1DBFC /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5709827A69E1200C1DBFC /* DateFormatters.swift */; };
+		A9C5709B27A6A41200C1DBFC /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5709A27A6A41200C1DBFC /* BarChart.swift */; };
+		A9C5709E27A6A49100C1DBFC /* ChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5709D27A6A49100C1DBFC /* ChartGrid.swift */; };
+		A9C570A227A6A81E00C1DBFC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C570A127A6A81E00C1DBFC /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +85,14 @@
 		A9C5706927A6897B00C1DBFC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A9C5706D27A689CA00C1DBFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9C5708F27A68B8600C1DBFC /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		A9C5709227A68BE300C1DBFC /* DailyIntakeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyIntakeModel.xcdatamodel; sourceTree = "<group>"; };
+		A9C5709427A68F7800C1DBFC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A9C5709627A69D8900C1DBFC /* HistoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellView.swift; sourceTree = "<group>"; };
+		A9C5709827A69E1200C1DBFC /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+		A9C5709A27A6A41200C1DBFC /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		A9C5709D27A6A49100C1DBFC /* ChartGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGrid.swift; sourceTree = "<group>"; };
+		A9C570A127A6A81E00C1DBFC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +159,7 @@
 		A9C56FDC27A0682300C1DBFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5709C27A6A48500C1DBFC /* Chart */,
 				A9C5703627A6822300C1DBFC /* History */,
 				A9C5700C27A5375A00C1DBFC /* Settings */,
 				A9C5700027A52C8100C1DBFC /* Progress */,
@@ -192,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C5700727A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift */,
+				A9C5709827A69E1200C1DBFC /* DateFormatters.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -242,6 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				A9C5700227A52DD400C1DBFC /* UserStorageService.swift */,
+				A9C5708F27A68B8600C1DBFC /* PersistenceController.swift */,
+				A9C5709127A68BE300C1DBFC /* DailyIntakeModel.xcdatamodeld */,
+				A9C5709427A68F7800C1DBFC /* CoreDataManager.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -270,6 +291,7 @@
 				A9C56FDF27A068A100C1DBFC /* HistoryView.swift */,
 				A9C5703727A682C500C1DBFC /* HistoryViewModel.swift */,
 				A9C5703927A6847600C1DBFC /* SelectionLine.swift */,
+				A9C5709627A69D8900C1DBFC /* HistoryCellView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -281,6 +303,16 @@
 				A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		A9C5709C27A6A48500C1DBFC /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5709A27A6A41200C1DBFC /* BarChart.swift */,
+				A9C5709D27A6A49100C1DBFC /* ChartGrid.swift */,
+				A9C570A127A6A81E00C1DBFC /* BarChartView.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,22 +394,29 @@
 			files = (
 				A9C5703A27A6847600C1DBFC /* SelectionLine.swift in Sources */,
 				A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */,
+				A9C570A227A6A81E00C1DBFC /* BarChartView.swift in Sources */,
 				A9C5706C27A6899900C1DBFC /* SceneDelegate.swift in Sources */,
 				A9C56FCC27A0601D00C1DBFC /* ContentView.swift in Sources */,
 				A9C5703127A595AE00C1DBFC /* NotificationName+Values.swift in Sources */,
 				A9C56FE027A068A100C1DBFC /* HistoryView.swift in Sources */,
+				A9C5709E27A6A49100C1DBFC /* ChartGrid.swift in Sources */,
 				A9C56FDB27A0640700C1DBFC /* Images.swift in Sources */,
 				A9C5701727A5494100C1DBFC /* UnitsViewModel.swift in Sources */,
+				A9C5709727A69D8900C1DBFC /* HistoryCellView.swift in Sources */,
 				A9C5703827A682C500C1DBFC /* HistoryViewModel.swift in Sources */,
+				A9C5709027A68B8600C1DBFC /* PersistenceController.swift in Sources */,
 				A9C5700E27A5376300C1DBFC /* SettingsView.swift in Sources */,
 				A9C5701B27A5496D00C1DBFC /* Unit.swift in Sources */,
 				A9C5701527A546C500C1DBFC /* UnitsCellView.swift in Sources */,
 				A9C5700B27A5355700C1DBFC /* Date+Utility.swift in Sources */,
+				A9C5709527A68F7800C1DBFC /* CoreDataManager.swift in Sources */,
+				A9C5709327A68BE300C1DBFC /* DailyIntakeModel.xcdatamodeld in Sources */,
 				A9C56FFF27A52C7B00C1DBFC /* ProgressViewModel.swift in Sources */,
 				A9C5702427A551F200C1DBFC /* DailyGoalView.swift in Sources */,
 				A9C5700827A5328200C1DBFC /* UserDefaults+PropertyWrapper.swift in Sources */,
 				A9C5700327A52DD400C1DBFC /* UserStorageService.swift in Sources */,
 				A9C5701327A5465200C1DBFC /* UnitsView.swift in Sources */,
+				A9C5709927A69E1200C1DBFC /* DateFormatters.swift in Sources */,
 				A9C5706A27A6897B00C1DBFC /* AppDelegate.swift in Sources */,
 				A9C56FD927A0630800C1DBFC /* Colors.swift in Sources */,
 				A9C5702D27A58AA800C1DBFC /* Container.swift in Sources */,
@@ -388,6 +427,7 @@
 				A9C5702B27A58A8B00C1DBFC /* ContainerViewModel.swift in Sources */,
 				A9C5702927A58A8000C1DBFC /* ContainerView.swift in Sources */,
 				A9C56FDE27A0683F00C1DBFC /* TodayView.swift in Sources */,
+				A9C5709B27A6A41200C1DBFC /* BarChart.swift in Sources */,
 				A9C5701027A53CF700C1DBFC /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,7 +567,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -560,7 +600,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -618,6 +658,19 @@
 			productName = BarChart;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A9C5709127A68BE300C1DBFC /* DailyIntakeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9C5709227A68BE300C1DBFC /* DailyIntakeModel.xcdatamodel */,
+			);
+			currentVersion = A9C5709227A68BE300C1DBFC /* DailyIntakeModel.xcdatamodel */;
+			path = DailyIntakeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A9C56FBE27A0601D00C1DBFC /* Project object */;
 }

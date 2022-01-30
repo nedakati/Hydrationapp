@@ -7,51 +7,38 @@
 
 import SwiftUI
 import BarChart
+import CoreData
 
 struct HistoryView: View {
     
+    @Environment(\.managedObjectContext) private var viewContext
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \DailyIntakeEntity.date, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<DailyIntakeEntity>
+
     private let chartHeight: CGFloat = 300
-    private let config = ChartConfiguration()
     
     var body: some View {
-        VStack {
-            Text("Here you can see your hydration data for the last 30 days")
-                .font(.body)
-                .multilineTextAlignment(.center)
-                .padding()
-            
-            SelectableBarChartView<SelectionLine>(config: self.config)
-            .onBarSelection { entry, location in
-//                self.selectedBarTopCentreLocation = location
-//                self.selectedEntry = entry
-            }
-            .onAppear() {
-                let labelsFont = CTFontCreateWithName(("SFProText-Regular" as CFString), 10, nil)
-                self.config.data.entries = self.randomEntries()
-                self.config.data.color = .red
-                self.config.xAxis.labelsColor = .gray
-                self.config.xAxis.ticksColor = .gray
-                self.config.labelsCTFont = labelsFont
-                self.config.xAxis.ticksStyle = StrokeStyle(lineWidth: 1.5, lineCap: .round, dash: [2, 4])
-                self.config.yAxis.labelsColor = .gray
-                self.config.yAxis.ticksColor = .gray
-                self.config.yAxis.ticksStyle = StrokeStyle(lineWidth: 1.5, lineCap: .round, dash: [2, 4])
-                self.config.yAxis.minTicksSpacing = 50.0
-                self.config.yAxis.formatter = { (value, decimals) in
-                    return "\(value)"
+        NavigationView {
+            VStack {
+                Text("Here you can see your hydration data for the last 30 days")
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                
+                BarChart()
+                    .frame(height: chartHeight)
+                
+                List {
+                    ForEach(items) { item in
+                        HistoryCellView(item: item)
+                    }
                 }
             }
+            .navigationBarTitle("History", displayMode: .inline)
         }
-    }
-    
-    func randomEntries() -> [ChartDataEntry] {
-        var entries = [ChartDataEntry]()
-        for data in 0..<30 {
-            let randomDouble = Double.random(in: 0...250)
-            let newEntry = ChartDataEntry(x: "\(2000+data)", y: randomDouble)
-            entries.append(newEntry)
-        }
-        return entries
     }
 }
 

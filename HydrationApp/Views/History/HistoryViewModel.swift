@@ -6,10 +6,8 @@
 //
 
 import Foundation
-import BarChart
+import CoreData
 
 final class HistoryViewModel: ObservableObject {
-
-    @Published var entries = [ChartDataEntry]()
     
 }
