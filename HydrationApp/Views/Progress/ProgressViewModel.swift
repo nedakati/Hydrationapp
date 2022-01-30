@@ -21,9 +21,8 @@ final class ProgressViewModel: ObservableObject {
     @Published var container2Size: Int
     @Published var container3Size: Int
 
-    
     init() {
-        if UserStorageService.shared.lastChangeDate.getDayDifference(from: Date()) > 0 {
+        if UserStorageService.shared.lastChangeDate.isDateYesterday {
             UserStorageService.shared.dailyIntake = 0
         }
         
@@ -36,9 +35,11 @@ final class ProgressViewModel: ObservableObject {
         container3Size = UserStorageService.shared.container3
         
         intakePercentage = calculateDailyIntakePercentage()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didChangeUserValues), name: .settingsChanged, object: nil)
     }
     
-    func addedDailyIntake(_ intake: Int) {
+    func addDailyIntake(_ intake: Int) {
         dailyIntake += intake
         intakePercentage = calculateDailyIntakePercentage()
 
@@ -49,5 +50,16 @@ final class ProgressViewModel: ObservableObject {
     private func calculateDailyIntakePercentage() -> Int {
         guard targetDailyIntake > 0 else { return 0 }
         return 100 * dailyIntake / targetDailyIntake
+    }
+    
+    @objc private func didChangeUserValues() {
+        selectedUnit = UserStorageService.shared.unit ?? .mililiter
+        targetDailyIntake = UserStorageService.shared.targetDailyIntake
+        
+        container1Size = UserStorageService.shared.container1
+        container2Size = UserStorageService.shared.container2
+        container3Size = UserStorageService.shared.container3
+        
+        intakePercentage = calculateDailyIntakePercentage()
     }
 }

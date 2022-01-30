@@ -37,5 +37,7 @@ final class ContainerViewModel: ObservableObject {
         case .container3:
             UserStorageService.shared.container3 = Int(containerSize) ?? Container.container3.defaultValue
         }
+        
+        NotificationCenter.default.post(name: .settingsChanged, object: nil)
     }
 }

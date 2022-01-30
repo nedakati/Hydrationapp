@@ -16,6 +16,7 @@ struct TodayView: View {
             ZStack {
                 Image(Images.backgroundImage.rawValue, bundle: Bundle.main)
                     .resizable()
+                Color.black.opacity(0.2)
                 ProgressView()
             }
             .navigationBarTitle(isActive ? "" : "Today's Progress", displayMode: .inline)

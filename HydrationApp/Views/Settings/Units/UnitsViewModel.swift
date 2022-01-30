@@ -18,5 +18,6 @@ final class UnitsViewModel: ObservableObject {
     func didSelectUnit(_ unit: Unit) {
         selectedUnit = unit
         UserStorageService.shared.unit = unit
+        NotificationCenter.default.post(name: .settingsChanged, object: nil)
     }
 }

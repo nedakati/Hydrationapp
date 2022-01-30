@@ -36,6 +36,10 @@
 		A9C5702927A58A8000C1DBFC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702827A58A8000C1DBFC /* ContainerView.swift */; };
 		A9C5702B27A58A8B00C1DBFC /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702A27A58A8B00C1DBFC /* ContainerViewModel.swift */; };
 		A9C5702D27A58AA800C1DBFC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702C27A58AA800C1DBFC /* Container.swift */; };
+		A9C5703127A595AE00C1DBFC /* NotificationName+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5703027A595AE00C1DBFC /* NotificationName+Values.swift */; };
+		A9C5703427A680B500C1DBFC /* BarChart in Frameworks */ = {isa = PBXBuildFile; productRef = A9C5703327A680B500C1DBFC /* BarChart */; };
+		A9C5703827A682C500C1DBFC /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5703727A682C500C1DBFC /* HistoryViewModel.swift */; };
+		A9C5703A27A6847600C1DBFC /* SelectionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5703927A6847600C1DBFC /* SelectionLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,10 @@
 		A9C5702827A58A8000C1DBFC /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		A9C5702A27A58A8B00C1DBFC /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
 		A9C5702C27A58AA800C1DBFC /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		A9C5703027A595AE00C1DBFC /* NotificationName+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Values.swift"; sourceTree = "<group>"; };
+		A9C5703527A680E000C1DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A9C5703727A682C500C1DBFC /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		A9C5703927A6847600C1DBFC /* SelectionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C5703427A680B500C1DBFC /* BarChart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +110,7 @@
 		A9C56FC827A0601D00C1DBFC /* HydrationApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5703527A680E000C1DBFC /* Info.plist */,
 				A9C56FDC27A0682300C1DBFC /* Views */,
 				A9C5700127A52DB100C1DBFC /* Logic */,
 				A9C56FE427A06EED00C1DBFC /* Styles */,
@@ -134,11 +144,11 @@
 		A9C56FDC27A0682300C1DBFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5703627A6822300C1DBFC /* History */,
 				A9C5700C27A5375A00C1DBFC /* Settings */,
 				A9C5700027A52C8100C1DBFC /* Progress */,
 				A9C56FE127A06BC700C1DBFC /* Today */,
 				A9C56FCB27A0601D00C1DBFC /* ContentView.swift */,
-				A9C56FDF27A068A100C1DBFC /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C5700A27A5355700C1DBFC /* Date+Utility.swift */,
+				A9C5703027A595AE00C1DBFC /* NotificationName+Values.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -254,6 +265,16 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		A9C5703627A6822300C1DBFC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A9C56FDF27A068A100C1DBFC /* HistoryView.swift */,
+				A9C5703727A682C500C1DBFC /* HistoryViewModel.swift */,
+				A9C5703927A6847600C1DBFC /* SelectionLine.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +291,9 @@
 			dependencies = (
 			);
 			name = HydrationApp;
+			packageProductDependencies = (
+				A9C5703327A680B500C1DBFC /* BarChart */,
+			);
 			productName = HydrationApp;
 			productReference = A9C56FC627A0601D00C1DBFC /* HydrationApp.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +322,9 @@
 				Base,
 			);
 			mainGroup = A9C56FBD27A0601D00C1DBFC;
+			packageReferences = (
+				A9C5703227A680B500C1DBFC /* XCRemoteSwiftPackageReference "BarChart" */,
+			);
 			productRefGroup = A9C56FC727A0601D00C1DBFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -324,12 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C5703A27A6847600C1DBFC /* SelectionLine.swift in Sources */,
 				A9C5702627A553EC00C1DBFC /* ButtonSettingsCell.swift in Sources */,
 				A9C56FCC27A0601D00C1DBFC /* ContentView.swift in Sources */,
 				A9C5700527A5318900C1DBFC /* Constants.swift in Sources */,
+				A9C5703127A595AE00C1DBFC /* NotificationName+Values.swift in Sources */,
 				A9C56FE027A068A100C1DBFC /* HistoryView.swift in Sources */,
 				A9C56FDB27A0640700C1DBFC /* Images.swift in Sources */,
 				A9C5701727A5494100C1DBFC /* UnitsViewModel.swift in Sources */,
+				A9C5703827A682C500C1DBFC /* HistoryViewModel.swift in Sources */,
 				A9C5700E27A5376300C1DBFC /* SettingsView.swift in Sources */,
 				A9C5701B27A5496D00C1DBFC /* Unit.swift in Sources */,
 				A9C5701527A546C500C1DBFC /* UnitsCellView.swift in Sources */,
@@ -484,9 +514,11 @@
 				DEVELOPMENT_TEAM = 5P26NUF2Q4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HydrationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -514,9 +546,11 @@
 				DEVELOPMENT_TEAM = 5P26NUF2Q4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HydrationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -555,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9C5703227A680B500C1DBFC /* XCRemoteSwiftPackageReference "BarChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dawigr/BarChart";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9C5703327A680B500C1DBFC /* BarChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C5703227A680B500C1DBFC /* XCRemoteSwiftPackageReference "BarChart" */;
+			productName = BarChart;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9C56FBE27A0601D00C1DBFC /* Project object */;
 }

@@ -36,19 +36,19 @@ struct ProgressView: View {
             
             HStack(alignment: .center, spacing: 8) {
                 Button("\(viewModel.container1Size) \(viewModel.selectedUnit.shortTitle)") {
-                    viewModel.addedDailyIntake(viewModel.container1Size)
+                    viewModel.addDailyIntake(viewModel.container1Size)
                 }
                 .buttonStyle(AccentButtonStyle())
                 .frame(height: 30)
                 
                 Button("\(viewModel.container2Size) \(viewModel.selectedUnit.shortTitle)") {
-                    viewModel.addedDailyIntake(viewModel.container2Size)
+                    viewModel.addDailyIntake(viewModel.container2Size)
                 }
                 .buttonStyle(AccentButtonStyle())
                 .frame(height: 30)
 
                 Button("\(viewModel.container3Size) \(viewModel.selectedUnit.shortTitle)") {
-                    viewModel.addedDailyIntake(viewModel.container3Size)
+                    viewModel.addDailyIntake(viewModel.container3Size)
                 }
                 .buttonStyle(AccentButtonStyle())
                 .frame(height: 30)

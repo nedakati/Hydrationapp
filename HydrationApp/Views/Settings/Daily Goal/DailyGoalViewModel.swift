@@ -19,5 +19,6 @@ final class DailyGoalViewModel: ObservableObject {
     
     func save() {
         UserStorageService.shared.targetDailyIntake = Int(targetDailyIntake) ?? 0
+        NotificationCenter.default.post(name: .settingsChanged, object: nil)
     }
 }

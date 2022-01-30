@@ -22,6 +22,7 @@ struct ContainerView: View {
             Spacer()
             Image(Images.backgroundImage.rawValue, bundle: Bundle.main)
                 .resizable()
+            Color.black.opacity(0.2)
             VStack {
                 Text("Here you can specify your container size so it would be easier to enter your daily daily liquid intake.")
                     .font(.callout)
