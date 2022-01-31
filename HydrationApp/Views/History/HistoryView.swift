@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import BarChart
+
 import CoreData
 
 struct HistoryView: View {

@@ -34,7 +34,6 @@
 		A9C5702B27A58A8B00C1DBFC /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702A27A58A8B00C1DBFC /* ContainerViewModel.swift */; };
 		A9C5702D27A58AA800C1DBFC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5702C27A58AA800C1DBFC /* Container.swift */; };
 		A9C5703127A595AE00C1DBFC /* NotificationName+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5703027A595AE00C1DBFC /* NotificationName+Values.swift */; };
-		A9C5703427A680B500C1DBFC /* BarChart in Frameworks */ = {isa = PBXBuildFile; productRef = A9C5703327A680B500C1DBFC /* BarChart */; };
 		A9C5706A27A6897B00C1DBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5706927A6897B00C1DBFC /* AppDelegate.swift */; };
 		A9C5706C27A6899900C1DBFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5706B27A6899900C1DBFC /* SceneDelegate.swift */; };
 		A9C5706E27A689CA00C1DBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C5706D27A689CA00C1DBFC /* LaunchScreen.storyboard */; };
@@ -96,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C5703427A680B500C1DBFC /* BarChart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +332,6 @@
 			);
 			name = HydrationApp;
 			packageProductDependencies = (
-				A9C5703327A680B500C1DBFC /* BarChart */,
 			);
 			productName = HydrationApp;
 			productReference = A9C56FC627A0601D00C1DBFC /* HydrationApp.app */;
@@ -365,7 +362,6 @@
 			);
 			mainGroup = A9C56FBD27A0601D00C1DBFC;
 			packageReferences = (
-				A9C5703227A680B500C1DBFC /* XCRemoteSwiftPackageReference "BarChart" */,
 			);
 			productRefGroup = A9C56FC727A0601D00C1DBFC /* Products */;
 			projectDirPath = "";
@@ -639,25 +635,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A9C5703227A680B500C1DBFC /* XCRemoteSwiftPackageReference "BarChart" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dawigr/BarChart";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A9C5703327A680B500C1DBFC /* BarChart */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9C5703227A680B500C1DBFC /* XCRemoteSwiftPackageReference "BarChart" */;
-			productName = BarChart;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A9C5709127A68BE300C1DBFC /* DailyIntakeModel.xcdatamodeld */ = {
