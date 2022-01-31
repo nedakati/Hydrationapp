@@ -14,11 +14,9 @@ struct BarChart: View {
         animation: .default)
     private var data: FetchedResults<DailyIntakeEntity>
     
-    let accentColor: Color = Color(.red)
-    let axisColor: Color = Color(.red)
-    let gridColor: Color = Color(.lightGray)
-    let spacing: CGFloat = 50
-  
+    private let gridColor: Color = Color(.lightGray)
+    private let spacing: CGFloat = 50
+
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             ZStack {
@@ -36,10 +34,10 @@ struct BarChart: View {
             }
             
             HStack {
-                Text("02.01")
+                Text(data.compactMap { $0.date}.min()?.formatted(style: .short) ?? "")
                     .font(.caption)
                 Spacer()
-                Text("02.01")
+                Text(data.compactMap { $0.date}.max()?.formatted(style: .short) ?? "")
                     .font(.caption)
             }
         }

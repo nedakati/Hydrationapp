@@ -18,7 +18,7 @@ struct DailyGoalView: View {
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
-    @ObservedObject var viewModel = DailyGoalViewModel()
+    @ObservedObject private var viewModel = DailyGoalViewModel()
 
     var body: some View {
         ZStack {

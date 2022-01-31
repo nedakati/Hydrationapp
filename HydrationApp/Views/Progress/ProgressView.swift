@@ -10,9 +10,10 @@ import CoreData
 
 struct ProgressView: View {
     
+    @State private var waveOffset = Angle(degrees: 0)
     @Environment(\.managedObjectContext) private var viewContext
     
-    @ObservedObject var viewModel = ProgressViewModel()
+    @ObservedObject private var viewModel = ProgressViewModel()
 
     var body: some View {
         VStack {
@@ -27,7 +28,6 @@ struct ProgressView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200.0, height: 200)
-                
                 VStack {
                     Spacer()
                     Text("\(viewModel.dailyIntake) ml")
@@ -77,11 +77,17 @@ struct ProgressView: View {
                 if results.isEmpty {
                     saveItem()
                 } else {
+                    var didSaveItem = false
                     for result in results {
                         if result.date == viewModel.previusDate && viewModel.previusDate.isDateToday {
                             viewContext.delete(result)
                             saveItem()
+                            didSaveItem = true
                         }
+                    }
+                    
+                    if !didSaveItem {
+                        saveItem()
                     }
                 }
             } catch {

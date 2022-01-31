@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContainerView: View {
     
-    @ObservedObject var viewModel: ContainerViewModel
+    @ObservedObject private var viewModel: ContainerViewModel
     
     init(container: Container) {
         viewModel = ContainerViewModel(container: container)

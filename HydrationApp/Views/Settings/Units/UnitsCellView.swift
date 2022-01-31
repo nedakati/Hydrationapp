@@ -11,7 +11,6 @@ struct UnitsCellView: View {
     
     var unit: Unit
     var isSelected: Bool
-    
     var onUnitSelected: (() -> Void)?
     
     var body: some View {
